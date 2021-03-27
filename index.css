@@ -58,11 +58,8 @@ body {
 }
 
 .cv .descripcionPersonal {
-<<<<<<< HEAD
-  /* width: 45%; */
-=======
+
   /*width: 45%;*/
->>>>>>> be9a709acc027bd4ee9a104b1d22c35f5cde424e
   width: 30%;
   padding: 30px 15px;
   background: rgb(27, 27, 35);
@@ -568,7 +565,7 @@ h3 {
   display: block;
 }
 
-<<<<<<< HEAD
+
 @media (min-width: 570px) {
   .cv .descripcionPersonal .perfil .info .perfilLab h2 span {
     font-weight: 200;
@@ -713,7 +710,7 @@ h3 {
     grid-column-gap: 0.2rem;
     grid-row-gap: 0.2rem;
   }
-=======
+
 
 /*Media Query*/
 @media (max-width: 570px) {
@@ -816,5 +813,4 @@ h3 {
   margin: 0;
 
 }
->>>>>>> be9a709acc027bd4ee9a104b1d22c35f5cde424e
 }
