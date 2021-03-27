@@ -33,6 +33,31 @@ body {
   width: 100%;
 }
 
+
+@media (min-width: 480px) {
+  .cvPequeño {
+    display: none;
+  }
+  .footer {
+    display: none;
+  }
+  .cv {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .cvPequeño {
+    display: contents;
+  }
+  .footer {
+    display: block;
+  }
+  .cv {
+    display: none;
+  }
+}
+
 .cv {
   background: rgb(11, 12, 20);
   color: #c2d1f9;
