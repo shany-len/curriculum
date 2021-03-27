@@ -58,8 +58,7 @@ body {
 }
 
 .cv .descripcionPersonal {
-
-  /*width: 45%;*/
+  /* width: 45%; */
   width: 30%;
   padding: 30px 15px;
   background: rgb(27, 27, 35);
@@ -565,7 +564,6 @@ h3 {
   display: block;
 }
 
-
 @media (min-width: 570px) {
   .cv .descripcionPersonal .perfil .info .perfilLab h2 span {
     font-weight: 200;
@@ -710,107 +708,4 @@ h3 {
     grid-column-gap: 0.2rem;
     grid-row-gap: 0.2rem;
   }
-}
-
-/*Media Query*/
-@media (max-width: 570px) {
-  .cv .descripcionPersonal .perfil .info .nombre {
-    font-size: 1.5em;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab{
-    font-size: 1em;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab span{
-    font-size: 1em;
-  }
-  .cv .descripcionProfesional h3,
-  .cv .descripcionPersonal h3{
-    font-size: 24px;
-  }
-  h3{
-    font-size: 20px;
-  }
-  .cv .descripcionProfesional h3 i{
-    font-size: 15px;
-    height: 35px;
-    width: 35px;
-  }
-  span{
-    font-size: 15px;
-  }
-  div li{
-    font-size: 15px;
-  }
-  small{
-    font-size: 10px;
-  }
-  div i{
-    font-size: 10px;
-  }
-  .cv .descripcionPersonal .RRSS .box i{
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 0;
-
-  }
-  .cv .descripcionPersonal .perfil .fa-laptop-code{
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 420px) {
-  .cv .descripcionPersonal span{
-    font-size: 12px;
-  }
-  .cv .descripcionPersonal .perfil{
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .cv .descripcionPersonal h3{
-    font-size: 18px;
-  }
-  .cv .descripcionPersonal .perfil .info .nombre {
-    font-size: 20px;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab{
-    font-size: 18px;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab span{
-    font-size: 18px;
-  }
-
-}
-
-@media (max-width: 420px) {
-  .cv .descripcionProfesional{
-    padding: 20px;
-  }
-  .cv .descripcionPersonal{
-    width: 40%;
-  }
-  .cv .descripcionPersonal .perfil .info .nombre {
-    font-size: 18px;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab{
-    font-size: 15px;
-  }
-  .cv .descripcionPersonal .perfil .info .perfilLab span{
-    font-size: 15px;
-  }
-  .cv .descripcionPersonal h3{
-    font-size: 15px;
-  }
-  .cv .descripcionPersonal .RRSS .box a {
-    margin-left: 1%;
-}
-.cv .descripcionPersonal .RRSS .box i{
-  font-size: 15px;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  margin: 0;
-
-}
 }
