@@ -710,7 +710,7 @@ h3 {
     grid-column-gap: 0.2rem;
     grid-row-gap: 0.2rem;
   }
-
+}
 
 /*Media Query*/
 @media (max-width: 570px) {
