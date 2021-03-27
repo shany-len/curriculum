@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 /*Titulos Cuadro*/
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 /*General*/
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
 /*Nombre y Laboral*/
-@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
 /*General*/
 * {
@@ -26,7 +26,7 @@ body {
   background: #ffffff;
   cursor: default;
 
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -71,7 +71,7 @@ body {
   margin: -30px -15px 45px -15px;
   position: relative;
   z-index: 2;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: "Berkshire Swash", cursive;
 }
 
 .cv .descripcionPersonal .perfil::after {
@@ -123,78 +123,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span{
-  font-weight: 200;
-  transition: all 0.8s;
-  border-bottom: 1px solid;
-}
-
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(3) {
-  transition-delay: 0.2s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(4) {
-  transition-delay: 0.3s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(5) {
-  transition-delay: 0.4s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(6) {
-  transition-delay: 0.5s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(7) {
-  transition-delay: 0.6s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(8) {
-  transition-delay: 0.7s;
-}
-.cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(9) {
-  transition-delay: 0.8s;
-}
-
-h2:hover span {
-  font-weight: 700;
-}
-
-h2:hover span:nth-child(9) {
-  transition-delay: 0.8s;
-}
-h2:hover span:nth-child(8) {
-  transition-delay: 0.7s;
-}
-
-h2:hover span:nth-child(7) {
-  transition-delay: 0.6s;
-}
-
-h2:hover span:nth-child(6) {
-  transition-delay: 0.5s;
-}
-
-h2:hover span:nth-child(5) {
-  transition-delay: 0.4s;
-}
-
-h2:hover span:nth-child(4) {
-  transition-delay: 0.3s;
-}
-h2:hover span:nth-child(3) {
-  transition-delay: 0.2s;
-}
-h2:hover span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-h2:hover span:nth-child(1) {
-  transition-delay: 0s;
-}
-
-
-
-
-
 .cv .descripcionPersonal .contacto div {
   line-height: 24px;
 }
@@ -236,23 +164,58 @@ h2:hover span:nth-child(1) {
   transition-duration: 0.3s;
 }
 
-.cv .descripcionPersonal .RRSS .box {
+/*RRSS*/
+.cv .descripcionPersonal .RRSS .contenedorRRSS {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto auto;
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento {
   text-align: center;
   vertical-align: middle;
 }
 
-.cv .descripcionPersonal .RRSS .box a {
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a {
   display: inline-block;
   vertical-align: text-bottom;
 }
 
-.cv .descripcionPersonal .RRSS .box a:hover i {
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover i {
   background: rgb(128 108 189);
   border-radius: 50%;
   transform: rotate(360deg) scale(0.8);
 }
 
-.cv .descripcionPersonal .RRSS .box i {
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover .fa-whatsapp {
+  color: rgb(73, 161, 107);
+}
+.cv
+  .descripcionPersonal
+  .RRSS
+  .contenedorRRSS
+  .elemento
+  a:hover
+  .fa-map-marker {
+  color: #c72713;
+}
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover .fa-envelope {
+  color: #fc2ae0;
+}
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover .fa-home {
+  color: #744722;
+}
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover .fa-linkedin {
+  color: #026092;
+}
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento a:hover .fa-github {
+  color: #014a4d;
+}
+
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento i {
   display: inline-block;
   font-size: 30px;
   background: rgb(49, 12, 115);
@@ -265,13 +228,15 @@ h2:hover span:nth-child(1) {
   transition-duration: 0.3s;
 }
 
-.cv .descripcionPersonal .RRSS .box i::before {
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento i::before {
   transition-duration: 0.3s;
 }
 
-.cv .descripcionPersonal .RRSS .box i.fa::before {
+.cv .descripcionPersonal .RRSS .contenedorRRSS .elemento i.fa::before {
   display: block;
 }
+
+
 
 a {
   text-decoration: none;
@@ -284,8 +249,8 @@ a {
   color: rgb(128, 108, 189);
 }
 
-.cv .descripcionPersonal .intereses i{
-  color: rgb(255,255,255);
+.cv .descripcionPersonal .intereses i {
+  color: rgb(255, 255, 255);
   width: 20px;
   height: 20px;
   font-size: 20px;
@@ -293,16 +258,15 @@ a {
   margin-right: 15px;
 }
 
-
 /*Educacion Trabajo*/
 
 .timeline-item {
   padding: 2.5em 2em 1em;
-  position: relative; 
+  position: relative;
   border-left: 2px solid rgba(255, 255, 255, 0.3);
 }
 
-.timeline-item:hover span{
+.timeline-item:hover span {
   color: rgb(128 108 189);
 }
 
@@ -310,8 +274,8 @@ a {
   display: block;
   opacity: 0.7;
 }
-.timeline-item span{
-    transition-duration: 0.3s;
+.timeline-item span {
+  transition-duration: 0.3s;
 }
 
 .timeline-item::before {
@@ -323,7 +287,7 @@ a {
   display: block;
   font-weight: 700;
   font-size: 0.9rem;
-  font-family: 'Berkshire Swash', cursive;
+  font-family: "Berkshire Swash", cursive;
 }
 .timeline-item::after {
   width: 10px;
@@ -338,15 +302,34 @@ a {
   background: white;
 }
 .timeline-item:last-child {
-  -o-border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0)) 1 100%;
-     border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0)) 1 100%;
+  -o-border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(255, 255, 255, 0)
+    )
+    1 100%;
+  border-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(255, 255, 255, 0)
+    )
+    1 100%;
 }
 
 .timeline-item:first-child {
-  -o-border-image: linear-gradient(to top, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0)) 1 100%;
-     border-image: linear-gradient(to top, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0)) 1 100%;
+  -o-border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(255, 255, 255, 0)
+    )
+    1 100%;
+  border-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3) 60%,
+      rgba(255, 255, 255, 0)
+    )
+    1 100%;
 }
-
 
 /*Educación - Trabajo*/
 
@@ -360,8 +343,7 @@ a {
 }
 
 .cv .descripcionProfesional:hover > div:hover h3 i {
-  transform:  rotate(360deg) scale(1.25);
-  
+  transform: rotate(360deg) scale(1.25);
 }
 
 .cv .descripcionProfesional:hover > div:not(:hover) {
@@ -370,7 +352,7 @@ a {
 
 .cv .descripcionProfesional h3 {
   margin-top: 0;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: xx-large;
 }
 
@@ -393,7 +375,6 @@ a {
   float: left;
 }
 
-
 .cv .descripcionProfesional .trabajo,
 .cv .descripcionProfesional .educacion {
   width: 100%;
@@ -404,119 +385,116 @@ a {
   background: rgb(27, 27, 35);
 }
 
-
 h3 {
   color: rgb(128 108 189);
   margin: 10px 0;
   font-size: 1.25em;
-  font-family: 'Satisfy', cursive;
+  font-family: "Satisfy", cursive;
   font-size: x-large;
 }
 
-
 /*Skill*/
 .cv .descripcionProfesional .habilidades {
-    clear: both;
-    background: rgb(27, 27, 35);
-    padding: 15px;
-    border-radius: 15px;
-    border: 1px solid white;
-  }
-  
-  .cv .descripcionProfesional .habilidades ul {
-    margin-left: 15px;
-  }
-  
-  .cv .descripcionProfesional .habilidades ul li {
-    margin-bottom: 8px;
-    display: flex;
-    align-items: center;
-    transition-duration: 0.3s;
-  }
-    
-  .cv .descripcionProfesional .habilidades ul li span {
-    display: block;
-    width: 120px;
-  }
-  
-  .cv .descripcionProfesional .habilidades ul li .barraSkill {
-    background: #ffffff;
-    height: 2px;
-    width: calc(100% - 120px);
-    position: relative;
-    border-radius: 2px;
-  }
-  
-  .cv .descripcionProfesional .habilidades ul li .barraSkill .barra{
-    position: absolute;
-    top: -1px;
-    height: 4px;
-    background: rgb(128 108 189);
-    box-shadow: 0 0 0 rgb(128 108 189);
-    border-radius: 5px;
-  }
+  clear: both;
+  background: rgb(27, 27, 35);
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.cv .descripcionProfesional .habilidades ul {
+  margin-left: 15px;
+}
+
+.cv .descripcionProfesional .habilidades ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+}
+
+.cv .descripcionProfesional .habilidades ul li span {
+  display: block;
+  width: 120px;
+}
+
+.cv .descripcionProfesional .habilidades ul li .barraSkill {
+  background: #ffffff;
+  height: 2px;
+  width: calc(100% - 120px);
+  position: relative;
+  border-radius: 2px;
+}
+
+.cv .descripcionProfesional .habilidades ul li .barraSkill .barra {
+  position: absolute;
+  top: -1px;
+  height: 4px;
+  background: rgb(128 108 189);
+  box-shadow: 0 0 0 rgb(128 108 189);
+  border-radius: 5px;
+}
 
 /*Habilidades*/
 
 .cv .habilidades .tituloHabilidad {
-
-    color: #c2d1f9;
-    margin: 0 0 20px
+  color: #c2d1f9;
+  margin: 0 0 20px;
 }
 
-.cv .habilidades .tituloHabilidad:hover{
-    color: rgb(128 108 189);
+.cv .habilidades .tituloHabilidad:hover {
+  color: rgb(128 108 189);
 }
 
 .progress {
-    height: 2px;
-    background: rgb(255, 255, 255);
-    box-shadow: none;
-    margin-bottom: 30px;
-    overflow: visible
+  height: 2px;
+  background: rgb(255, 255, 255);
+  box-shadow: none;
+  margin-bottom: 30px;
+  overflow: visible;
 }
 
 .progress .progress-bar {
-    position: relative;
+  position: relative;
 }
 
 .progress .progress-value {
-    display: block;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgb(255, 255, 255);
-    position: absolute;
-    top: -30px;
-    right: -25px
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: -30px;
+  right: -25px;
 }
 
 .progress .progress-bar:after {
-    content: "";
-    display: inline-block;
-    width: 10px;
-    background: #fff;
-    position: absolute;
-    top: -10px;
-    bottom: -10px;
-    right: -5px;
-    z-index: 1;
-    transform: rotate(35deg)
+  content: "";
+  display: inline-block;
+  width: 10px;
+  background: #fff;
+  position: absolute;
+  top: -10px;
+  bottom: -10px;
+  right: -5px;
+  z-index: 1;
+  transform: rotate(35deg);
 }
 .barra .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: #806cbd;
-    color: #fff;
-    text-align: center;
-    border-radius: 15px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s; 
+  visibility: hidden;
+  width: 120px;
+  background-color: #806cbd;
+  color: #fff;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 1s;
 }
 
 .barra .tooltiptext::after {
@@ -534,7 +512,6 @@ h3 {
   visibility: visible;
   opacity: 1;
 }
-
 
 /*extras*/
 
@@ -585,4 +562,150 @@ h3 {
 
 .cv .descripcionProfesional .extras-items div span {
   display: block;
+}
+
+@media (min-width: 570px) {
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span {
+    font-weight: 200;
+    transition: all 0.8s;
+    border-bottom: 1px solid;
+  }
+
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(8) {
+    transition-delay: 0.7s;
+  }
+  .cv .descripcionPersonal .perfil .info .perfilLab h2 span:nth-child(9) {
+    transition-delay: 0.8s;
+  }
+
+  h2:hover span {
+    font-weight: 700;
+  }
+
+  h2:hover span:nth-child(9) {
+    transition-delay: 0.8s;
+  }
+  h2:hover span:nth-child(8) {
+    transition-delay: 0.7s;
+  }
+
+  h2:hover span:nth-child(7) {
+    transition-delay: 0.6s;
+  }
+
+  h2:hover span:nth-child(6) {
+    transition-delay: 0.5s;
+  }
+
+  h2:hover span:nth-child(5) {
+    transition-delay: 0.4s;
+  }
+
+  h2:hover span:nth-child(4) {
+    transition-delay: 0.3s;
+  }
+  h2:hover span:nth-child(3) {
+    transition-delay: 0.2s;
+  }
+  h2:hover span:nth-child(2) {
+    transition-delay: 0.1s;
+  }
+  h2:hover span:nth-child(1) {
+    transition-delay: 0s;
+  }
+}
+
+@media (max-width: 830px) {
+  .cv .descripcionPersonal .RRSS .contenedorRRSS {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 570px) {
+  .cv .descripcionPersonal .perfil .fa-laptop-code {
+    font-size: 50px;
+  }
+  .cv .descripcionPersonal .perfil .info .nombre {
+    font-size: 24px;
+  }
+
+  .cv .descripcionPersonal .perfil .info .perfilLab,
+  .cv .descripcionPersonal .perfil .info .perfilLab span,
+  h3,
+  .cv .descripcionProfesional h3 {
+    font-size: 20px;
+  }
+  div li,
+  span {
+    font-size: 14px;
+  }
+
+  .cv .descripcionProfesional h3 i {
+    font-size: 15px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+  small {
+    font-size: 10px;
+  }
+  .cv .descripcionPersonal .RRSS .contenedorRRSS {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cv .descripcionPersonal .RRSS .contenedorRRSS .elemento i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cv .descripcionPersonal {
+    width: 45%;
+  }
+  .cv .descripcionPersonal .perfil .fa-laptop-code {
+    font-size: 45px;
+  }
+  .cv .descripcionPersonal .perfil .info .nombre {
+    font-size: 20px;
+  }
+
+  .cv .descripcionPersonal .perfil .info .perfilLab,
+  .cv .descripcionPersonal .perfil .info .perfilLab span,
+  h3,
+  .cv .descripcionProfesional h3 {
+    font-size: 16px;
+  }
+  div li,
+  span {
+    font-size: 13px;
+  }
+  .fa-paw {
+    font-size: 14px;
+  }
+
+  .cv .descripcionPersonal .RRSS .contenedorRRSS {
+    grid-column-gap: 0.2rem;
+    grid-row-gap: 0.2rem;
+  }
 }
