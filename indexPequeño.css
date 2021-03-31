@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   transition: 0.5s;
-  background: rgb(11, 12, 20);
+  background: #CDCEFA;
   cursor: default;
 
   font-family: "Raleway", sans-serif;
@@ -74,14 +74,10 @@ HEADER
   width: 100%;
   height: 100%;
   padding: 50px;
-  color: #fff;
-  text-shadow: 1px 1px 1px #e1e0e0;
-
-  background-image: linear-gradient(
-    135deg,
-    rgb(49, 12, 115) 10%,
-    rgb(128, 108, 189) 100%
-  );
+  text-shadow: 2px 2px 2px #000000;
+  background: rgb(88,92,166);
+  background: linear-gradient(0deg, rgba(88,92,166,1) 24%, rgba(113,59,134,1) 72%);
+  color: #ffffff;
 }
 
 .header .overlay .perfilPequeño .imgLogoPequeño {
@@ -94,7 +90,7 @@ HEADER
   font-size: 80px;
   text-align: center;
   margin: auto;
-  color: rgb(49, 12, 115);
+  color: #CDCEFA;
 }
 
 .header .overlay .namePequeño {
@@ -107,8 +103,8 @@ HEADER
 /*FIN HEADER*/
 
 .cvPequeño {
-  background: rgb(11, 12, 20);
-  color: #c2d1f9;
+  background: #CDCEFA;
+  color: #000000;
   position: relative;
 }
 
@@ -117,16 +113,16 @@ HEADER
 .timeline-item-Pequeño {
   padding: 2.5em 2em 1em;
   position: relative;
-  border-left: 2px solid rgba(255, 255, 255, 0.3);
+  border-left: 2px solid rgba(0,0,0, 0.3);
 }
 
 .timeline-item-Pequeño:hover span {
-  color: rgb(128 108 189);
+  color: #200079;
+  font-size: 18px; color: rgb(128, 108, 189);
 }
 
 .timeline-item-Pequeño small {
   display: block;
-  opacity: 0.7;
 }
 .timeline-item-Pequeño span {
   transition-duration: 0.3s;
@@ -158,14 +154,14 @@ HEADER
 .timeline-item-Pequeño:last-child {
   -o-border-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.3) 60%,
-      rgba(255, 255, 255, 0)
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0)
     )
     1 100%;
   border-image: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0.3) 60%,
-      rgba(255, 255, 255, 0)
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0)
     )
     1 100%;
 }
@@ -173,14 +169,14 @@ HEADER
 .timeline-item-Pequeño:first-child {
   -o-border-image: linear-gradient(
       to top,
-      rgba(255, 255, 255, 0.3) 60%,
-      rgba(255, 255, 255, 0)
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0)
     )
     1 100%;
   border-image: linear-gradient(
       to top,
-      rgba(255, 255, 255, 0.3) 60%,
-      rgba(255, 255, 255, 0)
+      rgba(0, 0, 0, 0.3) 60%,
+      rgba(0, 0, 0, 0)
     )
     1 100%;
 }
@@ -211,8 +207,8 @@ HEADER
 }
 
 .cvPequeño .descripcionProfesionalPequeño h3 i {
-  color: #131720;
-  background: rgb(128 108 189);
+  color: #d6d6d6;
+  background: #303963;
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -229,15 +225,14 @@ HEADER
 .cvPequeño .descripcionProfesionalPequeño .habilidadesPequeño,
 .cvPequeño .descripcionProfesionalPequeño .extrasPequeño {
   width: 100%;
-  border: 1px solid white;
   border-radius: 20px;
   padding: 15px;
   margin: 0 4% 15px 0;
-  background: rgb(27, 27, 35);
+  background: #CDCEFA;
 }
 
 h3 {
-  color: rgb(128 108 189);
+  color: #202020;
   margin: 10px 0;
   font-size: 1.25em;
   font-family: "Satisfy", cursive;
@@ -247,10 +242,9 @@ h3 {
 /*Skill*/
 .cvPequeño .descripcionProfesionalPequeño .habilidadesPequeño {
   clear: both;
-  background: rgb(27, 27, 35);
+  background: #CDCEFA;
   padding: 15px;
   border-radius: 15px;
-  border: 1px solid white;
 }
 
 .cvPequeño .descripcionProfesionalPequeño .habilidadesPequeño ul {
@@ -292,20 +286,20 @@ h3 {
   position: absolute;
   top: -1px;
   height: 4px;
-  background: rgb(128 108 189);
-  box-shadow: 0 0 0 rgb(128 108 189);
+  background: rgb(128, 108, 189);
+  box-shadow: 0 0 0 rgb(128, 108, 189);
   border-radius: 5px;
 }
 
 /*Habilidades*/
 
 .cvPequeño .habilidadesPequeño .tituloHabilidadPequeño {
-  color: #c2d1f9;
+  color: #000000;
   margin: 0 0 20px;
 }
 
 .cvPequeño .habilidadesPequeño .tituloHabilidadPequeño:hover {
-  color: rgb(128 108 189);
+  color: rgb(128, 108, 189);
 }
 
 .progress {
@@ -371,7 +365,7 @@ h3 {
 }
 
 .checkedPequeño {
-  color: rgb(128, 108, 189);
+  color: #303963;
 }
 
 .barraPequeño:hover .tooltiptext {
@@ -382,11 +376,11 @@ h3 {
 /*extras*/
 
 .cvPequeño .descripcionProfesionalPequeño .extrasPequeño {
-  border: 1px solid white;
+
   border-radius: 20px;
   margin: 15px 0 0;
   padding: 15px;
-  background: rgb(27, 27, 35);
+  background:#CDCEFA;
 }
 
 .cvPequeño .descripcionProfesionalPequeño .extrasPequeño-items {
@@ -432,16 +426,34 @@ h3 {
 
 /*Footer*/
 
-.footer {
+/* .footer {
   height: fit-content;
-  margin-bottom: 2%;
-  border-radius: 50% 50% 0% 0% / 30%;
-  background: linear-gradient(
-    135deg,
-    rgb(49, 12, 115) 10%,
-    rgb(128, 108, 189) 100%
-  );
+  background: #E3E4FC;
+ color: #ffffff;
+} */
+
+.jagged-border {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 0px 1px 2px);
 }
+.jagged-border:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 10px;
+}
+.lightgray-bg {
+  background: rgba(119,127,155,1);
+}
+.lightgray-bg:before {
+  background: linear-gradient(45deg, transparent 33.333%, rgba(119,127,155,1) 33.333%, rgba(119,127,155,1) 66.667%, transparent 66.667%), linear-gradient(-45deg, transparent 33.333%, rgba(119,127,155,1) 33.333%, rgba(119,127,155,1) 66.667%, transparent 66.667%);
+  background-size: 20px 40px;
+}
+
 
 /*RRSS*/
 .footer .RRSS .contenedorRRSS {
@@ -455,7 +467,7 @@ h3 {
 }
 
 .footer h3 {
-  padding: 25px 25px 5px;
+  padding: 20px 25px 5px;
   margin: 0;
   font-size: x-large;
   color: white;
@@ -475,18 +487,14 @@ h3 {
 .footer .RRSS .contenedorRRSS .elemento i {
   display: inline-block;
   font-size: 20px;
-  background: rgb(11, 12, 20);
+  background: #CDCEFA;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   line-height: 40px;
-  color: #c2d1f9;
-  margin: 0 10px 10px 10px;
+  margin: 0 5px 5px 5px;
   transition-duration: 0.3s;
-  box-shadow: 3px 9px 16px rgba(102, 102, 102, 0.4),
-    -3px -3px 10px rgba(158, 158, 158, 0.06),
-    inset 14px 14px 26px rgba(255, 255, 255, 0.3),
-    inset -3px -3px 15px rgba(255, 255, 255, 0.05);
+  box-shadow: 10px 10px rgb(0 0 0 / 25%);
 }
 
 .footer .RRSS .contenedorRRSS .elemento i::before {
@@ -527,44 +535,3 @@ a {
     padding-left: 2% !important;
   }
 }
-
-/* 
-
-@media (max-width: 830px) {
-  .cvPequeño .descripcionProfesionalPequeño .RRSS .contenedorRRSS {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 570px) {
-  
-  small {
-    font-size: 10px;
-  }
-  .cvPequeño .descripcionProfesionalPequeño .RRSS .contenedorRRSS {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .cvPequeño .descripcionProfesionalPequeño .RRSS .contenedorRRSS .elemento i {
-    font-size: 20px;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-  }
-}
-
-@media (max-width: 480px) {
-  
-  div li,
-  span {
-    font-size: 13px;
-  }
-  .fa-paw {
-    font-size: 14px;
-  }
-
-  .cvPequeño .descripcionProfesionalPequeño .RRSS .contenedorRRSS {
-    grid-column-gap: 0.2rem;
-    grid-row-gap: 0.2rem;
-  }
-}
- */
