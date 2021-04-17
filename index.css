@@ -6,6 +6,7 @@
 /*Nombre y Laboral*/
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 
+
 /*General*/
 * {
   outline: none;
@@ -20,10 +21,9 @@
 html,
 body {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
   transition: 0.5s;
-  background: #CDCEFA;
+  background: #ffffff;
   cursor: default;
 
   font-family: "Raleway", sans-serif;
@@ -31,6 +31,19 @@ body {
   font-weight: 300;
   line-height: 1.5;
   width: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(88,92,166);
+  border-radius: 5px;
 }
 
 
@@ -59,7 +72,7 @@ body {
 }
 
 .cv {
-  background: #CDCEFA;
+  background: #ffffff;
   color: #000000;
   position: relative;
   display: flex;
@@ -98,18 +111,6 @@ color: #ffffff;
   z-index: 2;
   font-family: "Berkshire Swash", cursive;
 }
-
-/* .cv .descripcionPersonal .perfil::after {
-  content: "";
-  position: absolute;
-  background: rgb(128, 108, 189);
-  width: 100%;
-  height: 30px;
-  bottom: -15px;
-  left: 0;
-  transform: skewY(3deg);
-  z-index: -1;
-} */
 
 .cv .descripcionPersonal .perfil .imgLogo img {
   width: 100%;
@@ -275,14 +276,6 @@ a {
   color: #303963;
 }
 
-.cv .descripcionPersonal .intereses i {
-  color: rgb(255, 255, 255);
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  text-align: center;
-  margin-right: 15px;
-}
 
 /*Educacion Trabajo*/
 
@@ -293,8 +286,9 @@ a {
 }
 
 .timeline-item:hover span {
-  color: #200079;
+  color: #585ca6;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .timeline-item small {
@@ -364,16 +358,34 @@ a {
   padding: 20px;
 }
 
-.cv .descripcionProfesional:hover > div {
-  transition-duration: 0.5s;
+.cv .descripcionProfesional:hover > div:hover,
+.cv .descripcionProfesional:focus > div:focus {
+  -webkit-animation: effectoHover 1s;
+          animation: effectoHover 1s;
+  box-shadow: 0 0 0 2em rgba(0, 0, 0, 0);
+  border: 2px solid rgba(88,92,166,1);
 }
 
-.cv .descripcionProfesional:hover > div:hover h3 i {
+@-webkit-keyframes effectoHover {
+  0% {
+    box-shadow: 0 0 0 0 rgba(88,92,166,1);
+  }
+}
+
+@keyframes effectoHover {
+  0% {
+    box-shadow: 0 0 0 0 rgba(88,92,166,1);
+  }
+}
+
+.cv .descripcionProfesional > div:hover h3 i {
   transform: rotate(360deg) scale(1.25);
 }
 
 .cv .descripcionProfesional:hover > div:not(:hover) {
   opacity: 0.5;
+  border: none;
+  background-image: none;
 }
 
 .cv .descripcionProfesional h3 {
@@ -383,8 +395,8 @@ a {
 }
 
 .cv .descripcionProfesional h3 i {
-  color: #d6d6d6;
-  background: #303963;
+  color: #ffffff;
+  background: #585ca6;
   width: 42px;
   height: 42px;
   font-size: 20px;
@@ -396,34 +408,56 @@ a {
   transition-duration: 0.3s;
 }
 
-.cv .descripcionProfesional .trabajo,
-.cv .descripcionProfesional .educacion {
-  float: left;
-}
 
 .cv .descripcionProfesional .trabajo,
-.cv .descripcionProfesional .educacion {
+.cv .descripcionProfesional .educacion,
+.cv .descripcionProfesional .habilidades,
+.cv .descripcionProfesional .extras {
   width: 100%;
   border-radius: 20px;
   padding: 15px;
   margin: 0 4% 15px 0;
-  background: #CDCEFA;
+  background: #ffffff;
+  float: left;
 }
 
 h3 {
   color: #202020;
   margin: 10px 0;
-  font-size: 1.25em;
   font-family: "Satisfy", cursive;
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 /*Skill*/
-.cv .descripcionProfesional .habilidades {
-  clear: both;
-  background: #CDCEFA;
-  padding: 15px;
-  border-radius: 15px;
+h5{
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    color: #505050;
+    text-align: center;
+    position: relative;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+h5::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  left: 10%;
+  top: 15px;
+  background: #505050;
+  height: 3px;
+}
+
+h5 i {
+  font-style: normal;
+  background: #fff;  
+border-radius: 25px;
+  position: relative;
+  padding: 10px;
+}
+
+:focus {
+  outline: none;
 }
 
 .cv .descripcionProfesional .habilidades ul {
@@ -437,15 +471,9 @@ h3 {
   transition-duration: 0.3s;
 }
 
-.cv .descripcionProfesional .habilidades ul li span {
-  display: block;
-  width: 120px;
-}
-
 .cv .descripcionProfesional .habilidades ul li .barraSkill {
-  background: #ffffff;
+  background: #cfcece;
   height: 2px;
-  width: calc(100% - 120px);
   position: relative;
   border-radius: 2px;
 }
@@ -463,11 +491,13 @@ h3 {
 
 .cv .habilidades .tituloHabilidad {
   color: #000000;
-  margin: 0 0 20px;
+  margin-left: 4%;
+  margin-bottom: 2%;
 }
 
-.cv .habilidades .tituloHabilidad:hover {
-  color: rgb(128 108 189);
+.containerOther{
+  width: 80%;
+  margin-left: 10%;
 }
 
 .tituloBarra
@@ -481,7 +511,7 @@ h3 {
 
 .progress {
   height: 2px;
-  background: rgb(255, 255, 255);
+  background: #cfcece;
   box-shadow: none;
   margin-bottom: 30px;
   overflow: visible;
@@ -505,7 +535,7 @@ h3 {
   content: "";
   display: inline-block;
   width: 10px;
-  background: #fff;
+  background: #cfcece;
   position: absolute;
   top: -10px;
   bottom: -10px;
@@ -550,13 +580,6 @@ h3 {
 
 /*extras*/
 
-.cv .descripcionProfesional .extras {
-
-  
-  margin: 15px 0 0;
-  padding: 15px;
-  background: #CDCEFA;
-}
 
 .cv .descripcionProfesional .extras-items {
   box-sizing: border-box;
@@ -676,8 +699,15 @@ h3 {
   .tituloBarra{
     padding: 3% 0 0 0;
   }
+  
 }
 
+@media (max-width:890px){
+
+  .cv .habilidades .containerOther .row div i{
+    font-size: 10px;
+  }
+}
 
 @media (max-width: 570px) {
   .cv .descripcionPersonal .perfil .fa-laptop-code {
